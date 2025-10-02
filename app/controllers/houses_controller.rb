@@ -1,5 +1,5 @@
 class HousesController < ApplicationController
-  before_action :authorize_request, only: [:create]
+  before_action :authorize_request
 
   def index
     houses = House.all
